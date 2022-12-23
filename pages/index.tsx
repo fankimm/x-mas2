@@ -91,7 +91,7 @@ export default function Home() {
   const holiday = new Date("2022-12-25");
   const postMessage = async () => {
     const shape = Math.floor(Math.random() * 4) + 4;
-    const { error } = await supabase.from("messages").insert({
+    const { error } = await supabase.from("messages_public").insert({
       message: form?.input,
       shape,
       colIdx: currentLeafPos?.colIdx,
