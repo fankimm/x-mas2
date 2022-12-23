@@ -318,7 +318,7 @@ export default function Home() {
                   setForm({ input: e.target.value });
                 }}
                 ref={inputRef}
-                style={{ marginRight: "10px" }}
+                style={{ marginRight: "10px", marginBottom: "10px" }}
               ></input>
               <button
                 style={{ fontSize: "16px" }}
