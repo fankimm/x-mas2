@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: auto;
+}
+/* Enable hover only on non-touch devices */
+.messages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  align-items: center;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    padding: 5vw;
+  }
+}
