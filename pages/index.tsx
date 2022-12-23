@@ -25,11 +25,13 @@ const supabaseKey =
   "asdf_key";
 const supabase = createClient(supabaseUrl, supabaseKey);
 const getTreeData = async () => {
-  const res = await supabase.from("messages").select("shape,rowIdx,colIdx");
+  const res = await supabase
+    .from("messages_public")
+    .select("shape,rowIdx,colIdx");
   return res;
 };
 const getMessages = async () => {
-  const res = await supabase.from("messages").select("shape,message");
+  const res = await supabase.from("messages_public").select("shape,message");
   return res;
 };
 const Input = styled.div`
